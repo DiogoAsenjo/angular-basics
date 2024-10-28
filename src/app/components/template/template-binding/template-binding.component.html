@@ -1,0 +1,26 @@
+<h1>Templates</h1>
+<h2>Template binding</h2>
+{{ name }}
+<p>{{ 1 + 1 }}</p>
+<h2>Property binding</h2>
+<button [disabled]="!enabled">Botão</button>
+<h2>Class and style binding</h2>
+<p [style.text-decoration]="'underline'">Definido o estilo</p>
+<h2>Event binding</h2>
+<button (click)="gerenateRandomNum()">Gere um número aleatório</button>
+<p>{{ randomNum }}</p>
+<h2>Two-way binding</h2>
+<input [(ngModel)]="name" />
+<p>{{ name }}</p>
+<h2>Diretivas de atributo</h2>
+<h3 [ngClass]="{ 'background-red': isRed }">Classes condicionais</h3>
+<button (click)="decidingIfItIsRed(randomNum); gerenateRandomNum()">
+  Decida se ficará vermelho ou não
+</button>
+<h3
+  [ngStyle]="{
+    color: age > 20 ? 'blue' : 'red'
+  }"
+>
+  Estilo dinâmico
+</h3>
