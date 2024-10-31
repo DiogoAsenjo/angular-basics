@@ -1,0 +1,27 @@
+<h2>Control Flow</h2>
+
+<h3>IF</h3>
+@if (isTrue) {
+<p>É verdadeiro!</p>
+} @else {
+<p>É falso</p>
+}
+
+<h3>FOR</h3>
+<!-- @if (data | async; as data) { -->
+<ul>
+  @for (item of data2; track item) {
+  <li>{{ item }}</li>
+  } @empty {
+  <li>Lista Vazia</li>
+  }
+</ul>
+
+<h3>SWITCH CASE</h3>
+@switch (letter) { @case ('A') {
+<p>Letra {{ letter }}</p>
+} @case ('B') {
+<p>Letra {{ letter }}</p>
+} @default {
+<p>Sem letra</p>
+} }

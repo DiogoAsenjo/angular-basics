@@ -1,0 +1,28 @@
+<h1>3. Deferable Views</h1>
+
+<!-- 
+
+Dentro dos parâmetros do @defer podemos utilizar:
+timer() - para definir o tempo
+viewport() - para quando chegar no local da página
+interaction() - quando o usuário clicar
+hover - quando o usuario passar o mouse
+immediate
+prefetch - carrega de cara mas passa outra das interações acima
+when -
+
+Dentro do @placeholder podemos usar o minimum
+
+Dentro de loading, podemoos colocar um after ou minimum
+-->
+@defer (when isTrue) {
+<p>Carregou com o defer</p>
+} @placeholder {
+<p>Nem começou a carregar</p>
+} @loading (minimum 5s) {
+<p>Está carregando</p>
+} @error {
+<p>Deu problema</p>
+}
+
+<button (click)="changeBoolean()">Clique aqui</button>

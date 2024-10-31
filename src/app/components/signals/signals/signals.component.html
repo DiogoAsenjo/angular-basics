@@ -1,0 +1,11 @@
+<h1>4. Signals</h1>
+<p>{{ firstName() }} {{ lastName() }}</p>
+<p>{{ fullName() }}</p>
+<button (click)="changeFirstName()">Atualize o nome</button>
+
+<ul>
+  @for (item of array(); track $index) {
+  <li>{{ item }}</li>
+  }
+</ul>
+<button (click)="updateArray()">Adicionar item no array</button>
