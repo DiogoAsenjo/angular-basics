@@ -9,6 +9,7 @@ import { SignalsComponent } from './components/signals/signals/signals.component
 import { ParentComponent } from './components/components-comunication/parent/parent.component';
 import { InputComponent } from './components/components-comunication/input/input.component';
 import { OutputComponent } from './components/components-comunication/output/output.component';
+import { PipeComponent } from './components/pipes/pipe/pipe.component';
 
 @Component({
   selector: 'app-root',
@@ -24,16 +25,19 @@ import { OutputComponent } from './components/components-comunication/output/out
     ParentComponent,
     InputComponent,
     OutputComponent,
+    PipeComponent,
   ],
   template: `
-    <!-- <app-signals />
+    <!-- 
+    <app-signals />
     <app-new-component />
     <app-template-binding />
     <app-template-variable />
     <app-control-flow />
-    <app-deferrable-views /> -->
-
+    <app-deferrable-views />
     <app-parent />
+    -->
+    <app-pipe />
   `,
 })
 export class AppComponent {
