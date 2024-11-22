@@ -1,11 +1,4 @@
-import {
-  Component,
-  computed,
-  Signal,
-  signal,
-  WritableSignal,
-} from '@angular/core';
-import { single } from 'rxjs';
+import { Component, computed, signal, WritableSignal } from '@angular/core';
 
 @Component({
   selector: 'app-signals',

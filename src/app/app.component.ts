@@ -6,6 +6,9 @@ import { TemplateVariableComponent } from './components/template/template-variab
 import { ControlFlowComponent } from './components/template/control-flow/control-flow.component';
 import { DeferrableViewsComponent } from './components/template/deferrable-views/deferrable-views.component';
 import { SignalsComponent } from './components/signals/signals/signals.component';
+import { ParentComponent } from './components/components-comunication/parent/parent.component';
+import { InputComponent } from './components/components-comunication/input/input.component';
+import { OutputComponent } from './components/components-comunication/output/output.component';
 
 @Component({
   selector: 'app-root',
@@ -18,14 +21,19 @@ import { SignalsComponent } from './components/signals/signals/signals.component
     ControlFlowComponent,
     DeferrableViewsComponent,
     SignalsComponent,
+    ParentComponent,
+    InputComponent,
+    OutputComponent,
   ],
   template: `
-    <app-signals />
+    <!-- <app-signals />
     <app-new-component />
     <app-template-binding />
     <app-template-variable />
     <app-control-flow />
-    <app-deferrable-views />
+    <app-deferrable-views /> -->
+
+    <app-parent />
   `,
 })
 export class AppComponent {
